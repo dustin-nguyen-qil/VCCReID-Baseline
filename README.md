@@ -16,7 +16,7 @@ This repository contains implementation of training and testing baseline for Vid
 
 This baseline currently supports two public VCCRe-ID datasets: **VCCR** and **CCVID**.
 
-| Dataset | Num. IDs | Num. tracklets | Num. Clothes per ID | Public | Download Link |
+| Dataset | Num.IDs | Num.Tracklets | Num.Clothes/ID | Public | Download |
 |----------|----------|----------|----------|----------|----------|
 | Motion-ReID | 30 | 240 | - | X | - |
 | CVID-reID | 90 | 2980 | - | X | - |
