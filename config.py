@@ -36,7 +36,8 @@ class CONFIG:
         class AP3D:
             TEMPERATURE = 4
             CONTRACTIVE_ATT = True
-
+            
+        NAME = 'c2dres50'
         RES4_STRIDE = 1
         APP_FEATURE_DIM = 2048
         
