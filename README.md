@@ -1,6 +1,6 @@
 # Video-based (Cloth-changing) Person Re-Identification baseline.
 
-This repository contains implementation of training and testing baseline for Video-based (Cloth-changing) Person Re-ID (VCCRe-ID) using Pytorch-Lightning. 
+This repository contains implementation of training and testing baseline for Video-based (Cloth-changing) Person Re-ID (VCCRe-ID). This is a part of the official implementation for the paper: ... 
 
 ## 1. Features
 
@@ -94,6 +94,19 @@ bash main.sh
 
 Trained model will be automatically saved to `work_space/save`.
 Testing results will be automatically saved to `work_space/output`.
+
+## Citation
+
+If you find this repo helpful, please cite the following paper:
+
+```bash
+@inproceedings{vuong2024semi,
+  title={Temporal 3D Shape Modeling for Video-based Cloth-changing Person Re-Identification},
+  author={Nguyen, Vuong and Shah, Shishir and Mantini, Pranav},
+  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year = {2024}
+}
+```
 
 ## Acknowledgement
 
