@@ -4,7 +4,7 @@ This repository contains implementation of training and testing baseline for Vid
 
 ## 1. Features
 
-### Supported CNN backbones
+#### Supported CNN backbones
 
 - `c2dres50`: C2DResNet50
 - `i3dres50`: I3DResNet50
@@ -44,8 +44,6 @@ conda activate vccreid
 
 #### Clone the repository
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/dustin-nguyen-qil/fECG_cGAN.git
 ```
@@ -57,9 +55,9 @@ pip install -r requirements.txt
 
 ### Data Preparation
 
-- 1. Download the datasets VCCR and CCVID following download links above
-- 2. Create a folder named `data` inside the repository
-- 3. Run the following command line (**Note**: replace the path to the folder storing the datasets and the dataset name)
+1. Download the datasets VCCR and CCVID following download links above
+2. Create a folder named `data` inside the repository
+3. Run the following command line (**Note**: replace the path to the folder storing the datasets and the dataset name)
 ```bash
 python datasets/prepare.py --root "/media/dustin/DATA/Research/Video-based ReID" --dataset_name vccr
 ```
@@ -71,7 +69,7 @@ Go to `./config.py` to modify configurations accordingly
 - Number of epochs
 - Batch size
 - Learning rate
-- CNN backbone
+- CNN backbone (according to model names above)
 - Choice of loss functions
 
 If training from checkpoint, copy checkpoint path and paste to RESUME in `./config.py`.
