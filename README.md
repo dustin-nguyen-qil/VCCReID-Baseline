@@ -45,7 +45,7 @@ conda activate vccreid
 #### Clone the repository
 
 ```bash
-git clone https://github.com/dustin-nguyen-qil/fECG_cGAN.git
+git clone https://github.com/dustin-nguyen-qil/Videobased-ClothChanging-ReID-Baseline.git
 ```
 Next, install the dependencies by running
 ...

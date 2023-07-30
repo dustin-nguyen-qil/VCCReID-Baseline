@@ -13,7 +13,7 @@ class CONFIG:
     @dataclass
     class DATA:
         ROOT = 'data'
-        DATASET = 'vccr' # vccr, ccvid, ccpg
+        DATASET = 'ccvid' # vccr, ccvid, ccpg
         TRAIN_BATCH = 16
         SAMPLING_STEP = 64
         NUM_WORKERS = 4
