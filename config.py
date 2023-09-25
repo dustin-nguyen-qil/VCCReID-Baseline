@@ -13,7 +13,7 @@ class CONFIG:
     @dataclass
     class DATA:
         ROOT = 'data'
-        DATASET = 'ccvid' # vccr, ccvid, ccpg
+        DATASET = 'ccpg' # vccr, ccvid, ccpg
         TRAIN_BATCH = 16
         SAMPLING_STEP = 64
         NUM_WORKERS = 4
@@ -37,7 +37,7 @@ class CONFIG:
             TEMPERATURE = 4
             CONTRACTIVE_ATT = True
             
-        NAME = 'c2dres50'
+        NAME = 'ap3dres50'
         RES4_STRIDE = 1
         APP_FEATURE_DIM = 2048
         
@@ -46,12 +46,12 @@ class CONFIG:
     @dataclass
     class LOSS:
         CLA_LOSS = 'crossentropy'
-        CLA_LOSS_WEIGHT = 0.5
+        CLA_LOSS_WEIGHT = 1.
         CLA_S = 16.
         CLA_M = 0.
         CLOTHES_CLA_LOSS = 'cosface'
         PAIR_LOSS = 'triplet'
-        PAIR_LOSS_WEIGHT = 0.5
+        PAIR_LOSS_WEIGHT = 1.
         PAIR_S = 16.
         PAIR_M = 0.3
         EPSILON = 0.1
@@ -62,16 +62,16 @@ class CONFIG:
 
         @dataclass
         class LR_SCHEDULER:
-            STEPSIZE = 40
+            STEPSIZE = 20
             DECAY_RATE = 0.1
 
         @dataclass
         class OPTIMIZER:
             NAME = 'adam'
-            LR = 0.0005
+            LR = 0.0003
             WEIGHT_DECAY = 5e-4
 
-
+        MODE = 'standard' # 'one_cloth', 'standard'
         START_EPOCH = 0
-        MAX_EPOCH = 120
+        MAX_EPOCH = 60
         RESUME = None # add checkpoint here

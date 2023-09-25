@@ -25,6 +25,8 @@ def read_image(img_path):
 
 
 def pil_loader(path):
+    from PIL import ImageFile
+    ImageFile.LOAD_TRUNCATED_IMAGES = True  
     # open path as file to avoid ResourceWarning (https://github.com/python-pillow/Pillow/issues/835)
     with open(path, 'rb') as f:
         with Image.open(f) as img:

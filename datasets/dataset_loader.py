@@ -44,7 +44,12 @@ def build_trainloader():
     """
     Build Train Loader
     """
-    train_data_path = osp.join(config.DATA.ROOT, config.DATA.DATASET, 'train.pkl')
+    if config.TRAIN.MODE == 'frontal':
+        train_data_path = osp.join(config.DATA.ROOT, config.DATA.DATASET, 'train_front.pkl')
+    elif config.TRAIN.MODE == 'one_cloth':
+        train_data_path = osp.join(config.DATA.ROOT, config.DATA.DATASET, 'train_one_cloth.pkl')
+    else:
+        train_data_path = osp.join(config.DATA.ROOT, config.DATA.DATASET, 'train.pkl')
 
     train = VideoDataset(
         train_data_path, 
