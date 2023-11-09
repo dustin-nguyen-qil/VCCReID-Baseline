@@ -14,6 +14,7 @@ class CONFIG:
     class DATA:
         ROOT = 'data'
         DATASET = 'ccpg' # vccr, ccvid, ccpg
+        TEST_SET = 'ccpg'
         TRAIN_BATCH = 16
         SAMPLING_STEP = 64
         NUM_WORKERS = 4
@@ -37,7 +38,7 @@ class CONFIG:
             TEMPERATURE = 4
             CONTRACTIVE_ATT = True
             
-        NAME = 'ap3dres50'
+        NAME = 'c2dres50'
         RES4_STRIDE = 1
         APP_FEATURE_DIM = 2048
         
@@ -71,7 +72,14 @@ class CONFIG:
             LR = 0.0003
             WEIGHT_DECAY = 5e-4
 
-        MODE = 'standard' # 'one_cloth', 'standard'
+        TYPE = 'pose' # cloth, pose
+        TRAIN_MODE = 'side_back' # 'one_cloth', 'standard'
         START_EPOCH = 0
         MAX_EPOCH = 60
         RESUME = None # add checkpoint here
+    
+    @dataclass
+    class TEST:
+        TYPE = 'pose' # pose, cloth
+        TEST_MODE = 'front' # up, down, front, back, side, front_back, front_side, 
+        

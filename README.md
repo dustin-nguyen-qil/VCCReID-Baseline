@@ -1,6 +1,6 @@
 # Video-based (Cloth-changing) Person Re-Identification baseline.
 
-This repository contains implementation of training and testing baseline for Video-based (Cloth-changing) Person Re-ID (VCCRe-ID). This is a part of the official implementation for the paper: ... 
+This repository contains implementation of training and testing baseline for **Video-based Cloth-Changing Person Re-ID (VCCRe-ID)**. It can be used for general Video-based Person Re-ID as well. It is a part of the official implementation for the paper:  Temporal 3D Shape Modeling for Video-based Cloth-changing Person Re-Identification.
 
 ## 1. Features
 

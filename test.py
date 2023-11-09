@@ -11,8 +11,7 @@ from utils.utils import build_model_name
 import numpy as np
 import matplotlib.pyplot as plt
 
-model_name = build_model_name()
-print(f"Testing Model: {model_name}")
+
 
 def test(model, queryloader, galleryloader, query, gallery):
     model.cuda()
@@ -88,7 +87,14 @@ def test(model, queryloader, galleryloader, query, gallery):
 """
     Testing
 """
+if CONFIG.DATA.TEST_SET == CONFIG.DATA.DATASET:
+    model_name = build_model_name()
+    state_dict_path = osp.join(CONFIG.METADATA.SAVE_PATH, model_name) # replace path here if using pretrained SEMI 
+else:
+    state_dict_path = "work_space/save/ccpg_60_0.0003_16_ap3dres50_standard.pth" # replace path here if using pretrained SEMI 
+    model_name = state_dict_path.split('/')[-1]
 
+print(f"Testing Model: {model_name} on {CONFIG.DATA.TEST_SET} with mode: {CONFIG.TEST.TEST_MODE}")
 state_dict_path = osp.join(CONFIG.METADATA.SAVE_PATH, model_name)
 
 model = Inference(CONFIG)
@@ -118,10 +124,10 @@ if CONFIG.DATA.DATASET in ['vccr', 'ccvid']:
 
     plt.xlabel('Rank')
     plt.ylabel('Identification Rate')
-    plt.title(model_name)
+    plt.title(f'{model_name[:-4]}_{CONFIG.DATA.TEST_SET}_{CONFIG.TEST.TEST_MODE}')
     plt.grid(False)
     # Save the plot to an output folder
-    path = f"work_space/output/{model_name[:-4]}.png"
+    path = f"work_space/output/{model_name[:-4]}_{CONFIG.DATA.TEST_SET}_{CONFIG.TEST.TEST_MODE}.png"
     plt.legend()
     plt.savefig(path)
 else:
@@ -138,10 +144,10 @@ else:
 
     plt.xlabel('Rank')
     plt.ylabel('Identification Rate')
-    plt.title(model_name)
+    plt.title(f'{model_name[:-4]}_{CONFIG.DATA.TEST_SET}_{CONFIG.TEST.TEST_MODE}')
     plt.grid(False)
     # Save the plot to an output folder
-    path = f"work_space/output/{model_name[:-4]}.png"
+    path = f"work_space/output/{model_name[:-4]}_{CONFIG.DATA.TEST_SET}_{CONFIG.TEST.TEST_MODE}.png"
     plt.legend()
     plt.savefig(path)
 
