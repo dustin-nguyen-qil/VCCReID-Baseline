@@ -14,7 +14,7 @@ This repository contains implementation of training and testing baseline for **V
 
 #### Summary of VCCRe-ID datasets
 
-This baseline currently supports two public VCCRe-ID datasets: **VCCR** and **CCVID**.
+This baseline currently supports the public VCCRe-ID datasets: **VCCR**, **CCVID**, and **CCPG**.
 
 | Dataset | Num.IDs | Num.Tracklets | Num.Clothes/ID | Public | Download |
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
