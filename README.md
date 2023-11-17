@@ -1,6 +1,8 @@
-# Video-based (Cloth-changing) Person Re-Identification baseline.
+# Video-based Cloth-Changing Person Re-Identification baseline.
 
-This repository contains implementation of training and testing baseline for **Video-based Cloth-Changing Person Re-ID (VCCRe-ID)**. It can be used for general Video-based Person Re-ID as well. It is a part of the official implementation for the paper:  Temporal 3D Shape Modeling for Video-based Cloth-changing Person Re-Identification.
+This repository contains implementation of training and testing baseline for **Video-based Cloth-Changing Person Re-ID (VCCRe-ID)**. It can be used for general Video-based Person Re-ID as well. 
+
+This is a part of the official implementation for the paper:  **Temporal 3D Shape Modeling for Video-based Cloth-Changing Person Re-Identification** [[WACV2024 - 4th Real-World Surveillance Workshop](https://vap.aau.dk/rws-wacv2024/)]. 
 
 ## 1. Features
 
@@ -102,7 +104,15 @@ If you find this repo helpful, please cite the following paper:
 ```bash
 @inproceedings{vuong2024semi,
   title={Temporal 3D Shape Modeling for Video-based Cloth-changing Person Re-Identification},
-  author={Nguyen, Vuong and Shah, Shishir and Mantini, Pranav},
+  author={Vuong Nguyen and Shishir Shah and Pranav Mantini},
+  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshop},
+  year = {2024}
+}
+```
+```bash
+@inproceedings{vuong2024cvsl,
+  title={Contrastive Viewpoint-aware Shape Learning for Long-term Person Re-Identification},
+  author={Vuong Nguyen and Khadija Khaldi and Dung Nguyen and Shishir Shah and Pranav Mantini},
   booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
   year = {2024}
 }
