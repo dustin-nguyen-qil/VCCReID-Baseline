@@ -1,8 +1,9 @@
-# Video-based Cloth-Changing Person Re-Identification baseline.
+# Video-based Cloth-Changing Person Re-Identification
 
-This repository contains implementation of training and testing baseline for **Video-based Cloth-Changing Person Re-ID (VCCRe-ID)**. It can be used for general Video-based Person Re-ID as well. 
+This repository contains implementation of training and testing baseline for **Video-based Cloth-Changing Person Re-ID (VCCRe-ID)**.
 
-This is a part of the official implementation for the paper:  [Temporal 3D Shape Modeling for Video-based Cloth-Changing Person Re-Identification](https://openaccess.thecvf.com/content/WACV2024W/RWS/html/Nguyen_Temporal_3D_Shape_Modeling_for_Video-Based_Cloth-Changing_Person_Re-Identification_WACVW_2024_paper.html) [WACV2024 - 4th Real-World Surveillance Workshop]. 
+## News
+- E-VCCR dataset will be released soon.
 
 ## 1. Features
 
@@ -96,31 +97,6 @@ bash main.sh
 
 Trained model will be automatically saved to `work_space/save`.
 Testing results will be automatically saved to `work_space/output`.
-
-## Citation
-
-If you find this repo helpful, please cite the following paper:
-
-```bash
-@InProceedings{Nguyen_2024_WACV,
-    author    = {Nguyen, Vuong D. and Mantini, Pranav and Shah, Shishir K.},
-    title     = {Temporal 3D Shape Modeling for Video-Based Cloth-Changing Person Re-Identification},
-    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops},
-    month     = {January},
-    year      = {2024},
-    pages     = {173-182}
-}
-```
-```bash
-@InProceedings{Nguyen_2024_WACV,
-    author    = {Nguyen, Vuong D. and Khaldi, Khadija and Nguyen, Dung and Mantini, Pranav and Shah, Shishir},
-    title     = {Contrastive Viewpoint-Aware Shape Learning for Long-Term Person Re-Identification},
-    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-    month     = {January},
-    year      = {2024},
-    pages     = {1041-1049}
-}
-```
 
 ## Acknowledgement
 
