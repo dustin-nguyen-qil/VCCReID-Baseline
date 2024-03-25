@@ -98,6 +98,22 @@ bash main.sh
 Trained model will be automatically saved to `work_space/save`.
 Testing results will be automatically saved to `work_space/output`.
 
+## Citation
+
+If you find this repo helpful, please cite:
+
+```bash
+@InProceedings{Nguyen_2024_WACV,
+    author    = {Nguyen, Vuong D. and Mantini, Pranav and Shah, Shishir K.},
+    title     = {Temporal 3D Shape Modeling for Video-Based Cloth-Changing Person Re-Identification},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops},
+    month     = {January},
+    year      = {2024},
+    pages     = {173-182}
+}
+```
+
+
 ## Acknowledgement
 
 Related repos: 
